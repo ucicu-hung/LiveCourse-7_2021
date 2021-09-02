@@ -1,0 +1,655 @@
+
+/* color */
+.bg-color-fluid{
+    background-color: #AA06010D;
+}
+.colorRed-Dark{
+    color: #650300;
+}
+.colorRed-Light{
+    color: #AA0601;
+}
+.bg-dark{
+    background-color: #650300;
+}
+.bg-light{
+    background-color: #AA0601;
+}
+.color-w{
+    color: #ffffff!important;
+}
+.color-bk{
+    color: #000000!important;
+}
+
+/* fontStyle */
+h1 {
+    font-size: 64px;
+    font-weight: bolder;
+}
+h2.title{
+    font-size: 48px;
+    margin-bottom:40px; //60px;
+    color: #650300;
+    font-style: normal;
+    font-weight: bold;
+}
+h3{
+    font-size: 24px;
+    color: #650300;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+/* utili */
+.main-inner{
+    padding: 60px 0 80px;
+}
+
+/* section  - header */
+.main-header{
+    padding: 40px 88px;
+    background-color: #AA0601;
+    position: relative;
+}
+.main-header logo{
+    width: 80px;
+    height: 49px;
+}
+.main-header logo img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+
+.main-header .main-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #fff;
+}
+.main-header .main-nav li{
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 64px;
+}
+.main-header .main-nav a{
+    width: 100%;
+    text-decoration: none;
+    position: relative;
+    color: #ffffff;
+}
+.main-header .main-nav a:after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: -5px;
+    height: 0;
+    border-bottom: 1px solid #fff;
+    transition: .3s;
+}
+.main-header .main-nav a:hover:after{
+    left: 0;
+    right:0;
+}
+.main-header .main-nav li:nth-of-type(4) {
+    margin-right: 0px;
+}
+/* .m-hamburger{
+    display: none;
+} */
+
+
+/* section  - banner */
+.banner{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png);
+    height: 840px;
+}
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    height: 100%;
+    font-weight: bold;
+}
+.banner-text{
+    font-size: 36px;
+}
+
+
+/* section - glassSeries */
+.glass-series-list li{
+    display: flex;
+    margin-bottom: 30px;
+}
+.glass-series-list li img{
+    max-width: 60%;
+    &.icon{
+        margin-right: 10px;
+    }
+}
+.glass-series-list h2{
+    color: #AA0601;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bolder;
+    padding: 0px 30px;
+    margin-bottom: 0;
+}
+
+/* section - about */
+.about-list li{
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    padding-right: 30px; //24px; 
+}
+.about-list li:last-child{
+    margin-right: 0;
+}
+.about-list .item-img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 40px;
+}
+// .glass-about p{
+//     padding: 0px 37px;
+// }
+
+/* section - glassCustomer */
+.customer-list li{
+    width: 25%;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    box-shadow: 0px 2px 6px #00000029;
+    border-radius: 4px;
+    :last-child{
+        margin-left: 0;
+    }
+    
+}
+.customer-list-head img{
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+}
+.customer-list-body{
+    padding: 16px 16px;
+    
+}
+.customer-list-body p{
+    padding-bottom: 16px;
+}
+.customer-list-body p ~ p + p{
+    color: #707070;
+    padding-bottom: 0px;
+}
+.customer-list-body p:first-child{
+    font-weight: bold;
+}
+
+@media (max-width: 1024px){
+    .customer-list li{
+        margin-right: 0px;
+    }
+}
+
+// /* glassDesgin */
+.glassDesgin {
+    display: block;
+    width: 100%;
+    height: 705px;
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/bg.png);
+    background-position: center;
+    background-size: cover;
+    ul{
+        flex-direction: row;
+        li {
+            position: relative;
+            margin-right: 30px;
+    
+            // 為了讓圖置中
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            &:nth-of-type(1) {
+              background-color: #00e7ff;
+            }
+        
+            &:nth-of-type(2) {
+              background-color: #f9e1cd;
+            }
+    
+            .images {
+                opacity: .3;
+                // img {
+                //     width: 100%; }
+            }
+            .title {
+                position: absolute;
+                color: #650300;
+                font-size: 72px;
+            }
+        }
+    }
+}
+
+/* section - glass-contact */
+.glass-contact p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+// .glass-contact .submit{
+//     margin-bottom: 12px;
+// }
+::placeholder{
+    color: lighten(#000, 80%);
+}
+/* footer */
+footer{
+    background-color: #AA0601;
+    padding: 44px 0px 40px 0;
+    color: #fff;
+}
+.mb-big{
+    margin-bottom: 32px;
+}
+.mb-medium{
+    margin-bottom: 24px;
+}
+.mb-small{
+    margin-bottom: 22px;
+}
+
+/* footer-nav-menu */
+.footer-info{
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+}
+.footer-nav-menu{
+    display: flex;
+    margin-bottom: 38px;
+}
+.footer-nav-menu li{
+    margin-right: 48px;
+}
+.footer-nav-menu li a{
+    width: 100%;
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer-nav-menu li:last-child{
+    margin-right: 0;
+}
+
+/* footer-info-contact */
+.footer-info-contact{
+    margin-bottom: 24px;
+}
+.footer-info-contact li{
+    margin-bottom: 24px;
+}
+.footer-info-contact li:nth-of-type(2){
+    margin-bottom: 24px;
+    /* padding-bottom: 24px; */
+}
+.footer-info-contact li img{
+    margin-right: 22px;
+}
+.footer-info-contact li:nth-of-type(2) img{
+    margin-right: 12px;
+}
+.footer-info-contact p{
+    font-size: 36px;
+}
+
+/* medaia-area */
+.medaia-area{
+    display: flex;
+}
+.medaia-area li{
+    margin-right: 32px;
+}
+.medaia-area li:last-child{
+    margin-right: 0;
+}
+
+
+/* footer-copyright */
+.footer-copyright-list {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-copyright-list li img{
+    margin-right: 38px;
+}
+.footer-copyright-list li a{
+    margin-right: 62px;
+}
+.footer-copyright-list li a:last-child{
+    margin-right: 0;
+}
+
+
+@media screen and (max-width:992px){
+    .main-header{
+        padding: 22px 40px;
+    }
+    h2.title{
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .main-inner{
+        padding: 40px 0px;
+    }
+
+    /* about */
+    .about-list li{
+        width: 48%;
+        margin-bottom: 40px;
+        padding-right: 0px;
+    }
+    .about-list .item-img{
+        width: 80px;
+        height: 80px;
+        margin-bottom: 16px;
+    }
+    /* customer-list */
+    .customer-list li{
+        width: 48%;
+        margin-bottom: 1.5rem;
+    }
+    /* .glass-series  */
+    .glass-series-list li:nth-of-type(2){
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .glass-series-list h2{
+        font-size: 28px;
+        margin-bottom: 0px;
+    }
+    /*  glassDesgin */
+    .glassDesgin {
+        display: block;
+        width: 100%;
+        height: auto;
+        background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/bg.png);
+        background-position: center;
+        background-size: cover;
+        ul{
+            li {
+                // flex-direction: column;
+                //margin-right: 0;
+                margin-bottom: 16px;
+                width: 50%;
+                .title {
+                    position: absolute;
+                    font-size: 28px; //72px;
+                }
+                &:last-child{
+                    // margin-bottom: 16px;
+                    margin-right: 0;;
+                }
+                .title {
+                    font-size: 32px;
+                }
+            }
+        }
+        
+    }
+    /* contact */
+    .glass-contact p{
+        font-size: 16px;
+    }
+    /* footer */
+    .footer-info{
+        margin-bottom: 24px;
+    }
+    .footer img{
+        width: 24px;
+        height: 24px;
+    }
+    .footer-nav-menu{
+        margin-bottom: 24px;
+    }
+    .footer-nav-menu li{
+        margin-right: 40px;
+    }
+    .footer-info-contact li{
+        margin-bottom: 9px;
+    }
+    .footer-info-contact li img{
+        margin-right: 8px;
+    }
+    .footer-info-contact li:nth-of-type(2) img{
+        margin-right: 8px;
+    }
+    .footer-info-contact p{
+        font-size: 20px;
+    }
+
+
+    .footer-copyright-list li img {
+        margin-right: 0px;
+        display: none;
+    }
+    .footer-copyright-list li a {
+        margin-right: 24px;
+    }
+}
+
+@media screen and (max-width:414px){
+   
+    .main-header{
+        padding:10px 0 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        div{
+            flex-direction: column;
+            width: 100%;
+        }
+        nav{ width: 100%;}
+    }
+    .main-header .main-nav{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-top: 1px solid #fff;
+        margin-top: 10px;
+    }
+    .main-header .main-nav li{
+        width: 50%;
+        margin-right: 0;
+        border-left: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+    }
+
+    .m-hamburger{
+        display: none;
+        // position: absolute;
+        // top: 40%;
+        // left: 16px;
+    }
+    .m-hamburger .line{
+        width: 22px;
+        height: 2px;
+        background: #fff;
+        margin: 0 0 3px 3px;
+    }
+    .h-logo{
+        width: 48px;
+        height: 30px;
+    }
+    h1{
+        font-size: 32px;
+    }
+    h2.title{
+        font-size: 24px;
+        margin-bottom: 32px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .banner-text{
+        font-size: 16px;
+    }
+    .main-inner{
+        padding: 32px 15px; //0px;
+    }
+    .container-inner {
+        width: 87%;
+    }
+    .banner{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-sm.png);
+        height: 394px;
+    }
+    /* about */
+    .about-list{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .about-list li{
+        width: 100%;
+        margin-bottom: 40px;
+        padding-right: 0px;
+    }
+    .about-list .item-img{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 16px;
+    }
+    /* customer-list */
+    .customer-list li{
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    /* glassDesgin */
+    .glassDesgin {
+        display: block;
+        width: 100%;
+        height: auto;
+        background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/bg.png);
+        background-position: center;
+        background-size: cover;
+        ul{ 
+            flex-direction: column;
+            padding: 0px 15px;
+            li {
+                margin-right: 0;
+                width: 100%;
+                .images {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    /* .glass-series  */
+    .glass-series-list li{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 8px;
+        position: relative;
+    }
+    .glass-series-list li:nth-of-type(2){
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .glass-series-list li img{
+        max-width: 100%;
+    }
+    .glass-series-list h2{
+        font-size: 28px;
+        margin-bottom: 0px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: #fff;
+    }
+    .glass-series-list .item-img-icon{
+        -webkit-filter: brightness(500);
+        filter: brightness(500);
+    }
+    /* contact */
+    .glass-contact p{
+        font-size: 16px;
+    }
+
+
+    /* footer */
+    footer{
+        padding:24px 0px 16px;
+    }
+    .footer-info{
+        margin-bottom: 16px;
+    }
+    .footer-nav-menu{
+        display: none;
+    }
+    .footer li.footer-nav-menu-itme{
+        margin-right: 40px;
+    }
+    .footer-info-contact li{
+        margin-bottom: 8px;
+    }
+    .footer-info-contact li img{
+        margin-right: 8px;
+    }
+    .footer-info-contact img{
+        width: 20px;
+        height: 20px;
+    }
+    .footer-info-contact li:nth-of-type(2) img{
+        margin-right: 8px;
+    }
+    .footer-info-contact p{
+        font-size: 16px;
+    }
+
+    .medaia-area li{
+        margin-right: 24px;
+    }
+
+    .footer-copyright-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .footer-copyright-list li{
+        margin-bottom: 8px;
+    }
+    .footer-copyright-list li:nth-of-type(2) {
+        flex-direction: column;
+    }
+    .footer-copyright-list li .f-logo{
+        display: none;
+    }
+    .footer-copyright-list li a{
+        margin-right: 24px;
+        margin-bottom: 8px;
+    }
+    .footer-copyright-list li a:nth-of-type(2){
+        margin-bottom: 0px;
+    }
+    
+}

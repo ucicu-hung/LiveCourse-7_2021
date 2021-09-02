@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <!-- icon cdn-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- font-family: 'Lato', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- font-family: 'Merriweather', serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+    <!-- font-family: 'Roboto', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="d-flex d-flex-row d-flex-col-md jc-sb ai-c">
+            <h2>
+                <a href="#">
+                    <img class="h-logo" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png" alt="第三週作業">
+                </a>
+            </h2>
+            <nav>
+                <div class="m-hamburger jq-hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul class="main-nav d-flex jc-fs ">
+                    <li><a href="#">系列鏡框</a></li>
+                    <li><a href="#">門市據點</a></li>
+                    <li><a href="#">部落格</a></li>
+                    <li><a href="#">常見問題</a></li>
+                </ul>
+            </nav>
+        </div> 
+    </header>
+
+    <%- contents %>
+
+    <footer class="footer position-r">
+        <div class="container">
+            <nav class="footer-info">
+                <div>
+                    <ul class="footer-nav-menu">
+                        <li><a href="#">首頁</a></li>
+                        <li><a href="#">系列鏡框</a></li>
+                        <li><a href="#">門市據點</a></li>
+                        <li><a href="#">部落格</a></li>
+                        <li><a href="#">常見問題</a></li>
+                    </ul>
+                    <ul class="footer-info-contact">
+                        <li class="d-flex jc-fs ai-c">
+                            <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-phone.svg" alt="">
+                            <p>0800-000-000</p>
+                        </li>
+                        <li class="d-flex jc-fs ai-c">
+                            <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-mail.svg" alt="">
+                            <p>glasses@business.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="medaia-area">
+                    <li>
+                        <a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-fb.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-ig.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-line.svg" alt=""></a>
+                    </li>
+                </ul> 
+            </nav>
+            <nav class="footer-copyright">
+                <ul class="footer-copyright-list">
+                    <li class="d-flex">
+                        <img class="f-logo"src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png" alt=""><p>Copyright © 2020 Glasses.All rights reserved.</p>
+                    </li>
+                    <li class="d-flex">
+                        <a href="#">隱私權政策</a>
+                        <a href="#">服務條款</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    <!-- BS4 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+        once: true
+        });
+    </script>
+</body>
+
+</html>
